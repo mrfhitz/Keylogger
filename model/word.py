@@ -6,8 +6,8 @@ class Word:
     __computerName = None
     __cursor = None
 
-    def __init__(self, computerName):
-        self.__conn = Database.connect();
+    def __init__(self, computerName, cfg_file):
+        self.__conn = Database.connect(cfg_file);
         self.__computerName = computerName
         self.__cursor = self.__conn.cursor()
 

